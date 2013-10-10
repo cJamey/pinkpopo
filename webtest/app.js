@@ -4,8 +4,6 @@ var http=require('http');
 
 http.createServer(function(req,res){
 	res.writeHead(200,{'Content-Type':'text/html'});
-	res.write('<h1>Node.js</h1>');
-	res.end('<p>Hello World</p>');
 	res.write('<h1>Pinkpopo的世界</h1>');
 	res.end('<p>等待pinkpopo更新最新的款式</p>');
 }).listen(3000);
