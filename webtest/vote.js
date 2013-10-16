@@ -12,7 +12,7 @@ function urlget(callback) {
     	req.abort();
     	console.log('mission abort!');
 	}, 5000);
-
+//
     req = http.request(options, function(res) {
         clearTimeout(request_timeout);
         var chunks = [], length = 0;
