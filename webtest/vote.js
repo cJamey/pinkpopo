@@ -1,5 +1,6 @@
 var http = require('http')
   , path1 = '/vote1205/vote?pid=10120&rid=231609&from=timeline&isappinstalled=0&callback=jsonp138181'
+  , path1 = '/vote1205/vote?pid=10120&rid=230397&from=timeline&isappinstalled=0&callback=jsonp138181'
   , abortCount = 0;
 function urlget(callback) {
     var options = { host: 'vote0.cztv.com',
