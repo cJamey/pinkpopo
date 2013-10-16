@@ -10,8 +10,8 @@ function urlget(callback) {
     request_timeout = setTimeout(function() {
     	request_timeout = null;
     	req.abort();
-    	console.log('mission abort!');
-	}, 5000);
+    	//console.log('mission abort!');
+	}, 2000);
 //
     req = http.request(options, function(res) {
         clearTimeout(request_timeout);
