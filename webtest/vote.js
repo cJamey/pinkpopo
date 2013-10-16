@@ -62,7 +62,7 @@ for(i=0;i<200;i++){
 //	        console.log('error:', util.inspect(err, true), '\nResponse:\n', res ? res.headers : null);
 	    } else {
 //	        console.log('Headers:\n', res.headers, '\nBody:\n', res.body.toString());
-			console.log("成功");
+//			console.log("成功");
 	    }
 	});
 }
