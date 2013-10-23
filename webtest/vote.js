@@ -1,16 +1,17 @@
 var http = require('http')
-  , path1 = '/vote1205/vote?pid=10120&rid=230397&from=timeline&isappinstalled=0&callback=jsonp138185'
+  , path1 = '/2013jzj/toupiao.php?jsoncallback=jQuery16209258382597472519_138191'
+  , path2 = '&flag=1&id=16&_=138191'
   , abortCount = 0;
 function urlget(callback) {
-    var options = { host: 'vote0.cztv.com',
-            path: path2,
+    var options = { host: 'vote.s1979.com',
+            path: path3,
             method: 'GET' };
 
     var req = null, request_timeout = null;
     request_timeout = setTimeout(function() {
     	request_timeout = null;
     	req.abort();
-    	//console.log('mission abort!');
+    	console.log('mission abort!');
 	}, 2000);
 //
     req = http.request(options, function(res) {
@@ -54,7 +55,7 @@ for(i=0;i<200;i++){
 	h=parseInt(Math.random()*10+1);
 	j=parseInt(Math.random()*10+1);
 	xxx=a+''+b+''+c+''+d+''+h+''+f+''+g+''+j;
-	path2 = path1 + xxx;
+	path3 = path1 + xxx + path2 + xxx;
 
 	urlget(function(err, res) {
 //	    console.log('\nGET', path2);
@@ -62,6 +63,7 @@ for(i=0;i<200;i++){
 //	        console.log('error:', util.inspect(err, true), '\nResponse:\n', res ? res.headers : null);
 	    } else {
 //	        console.log('Headers:\n', res.headers, '\nBody:\n', res.body.toString());
+            console.log('\nBody:\n', res.body.toString());
 //			console.log("成功");
 	    }
 	});
